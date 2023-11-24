@@ -1,4 +1,4 @@
-# Install script for directory: /home/anton20241/scanmaxM5_3D_ToF
+# Install script for directory: /home/anton202/scanmaxM5_3D_ToF
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/anton20241/scanmaxM5_3D_ToF/build/dlib_build/cmake_install.cmake")
+  include("/home/anton202/scanmaxM5_3D_ToF/build/dlib_build/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/anton20241/scanmaxM5_3D_ToF/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/anton202/scanmaxM5_3D_ToF/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -8,7 +8,7 @@ set(
     CMAKE_RUNTIME_OUTPUT_DIRECTORY
     ${CMAKE_HOME_DIRECTORY}/bin
     )
-add_subdirectory(/home/anton20241/scanmaxM5_3D_ToF/libs/dlib/dlib dlib_build)
+add_subdirectory(/home/anton202/scanmaxM5_3D_ToF/libs/dlib/dlib dlib_build)
 set(CMAKE_CURRENT_SOURCE_DIR ./)
 file(GLOB SOURCES *.cpp *.h)
 

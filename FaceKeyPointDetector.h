@@ -9,8 +9,8 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/objdetect.hpp>
 
-#include </home/anton20241/scanmaxM5_3D_ToF/libs/dlib/dlib/image_processing/frontal_face_detector.h>
-#include </home/anton20241/scanmaxM5_3D_ToF/libs/dlib/dlib/opencv.h>
+#include </home/anton202/scanmaxM5_3D_ToF/libs/dlib/dlib/image_processing/frontal_face_detector.h>
+#include </home/anton202/scanmaxM5_3D_ToF/libs/dlib/dlib/opencv.h>
 
 #include "Utils.h"
 

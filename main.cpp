@@ -60,7 +60,7 @@ int main() {
         if(!colorFrame.empty() || !depthFrame.empty() || !irFrame.empty()){
             // cv::putText(colorFrame, textFPS, cv::Point(10, 450), cv::FONT_HERSHEY_SIMPLEX, 1, cv::Scalar(0, 255, 0), 2, cv::LINE_AA);
 
-            cv::imshow("Depth", depthFrame);
+            // cv::imshow("Depth", depthFrame);
             cv::imshow("IR", irFrame);
             // cv::imshow("Color", colorFrame);
         }

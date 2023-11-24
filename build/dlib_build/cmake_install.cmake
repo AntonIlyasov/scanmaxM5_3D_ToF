@@ -1,4 +1,4 @@
-# Install script for directory: /home/anton20241/scanmaxM5_3D_ToF/libs/dlib/dlib
+# Install script for directory: /home/anton202/scanmaxM5_3D_ToF/libs/dlib/dlib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

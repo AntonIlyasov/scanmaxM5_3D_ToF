@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/anton20241/scanmaxM5_3D_ToF/libs/Include -I/home/anton20241/scanmaxM5_3D_ToF/. -isystem /usr/local/include/opencv4 
+CXX_INCLUDES = -I/home/anton202/scanmaxM5_3D_ToF/libs/Include -I/home/anton202/scanmaxM5_3D_ToF/. -isystem /usr/local/include/opencv4 
 

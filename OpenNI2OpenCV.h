@@ -73,7 +73,7 @@ private:
     int m_height, m_width;
     int start;
     bool depth_is_wrote;
-    bool ir_is_wrote;
+    int frame_count;
 
 /*
     Функция для вычисления значения градиента писелей в зависимости от расстояния
@@ -101,9 +101,9 @@ private:
     }
 public:
     OpenNI2OpenCV() {
-        depth_is_wrote = false;
-        ir_is_wrote    = false;
-        start = clock();
+        depth_is_wrote  = false;
+        frame_count     = 0;
+        start           = clock();
     };
     ~OpenNI2OpenCV()
     {
@@ -325,11 +325,11 @@ public:
         uint16_t * pix_deth = static_cast<uint16_t*>(const_cast<void*>( m_depthFrame.getData() ));
         
         int end = clock();
-        if ((end - start) / CLOCKS_PER_SEC > 10 && !depth_is_wrote){
-          depth_is_wrote = true;
-          
+        
+        if ((end - start) / CLOCKS_PER_SEC > 5){
+          start = end;
           std::ofstream outOfstream;
-          outOfstream.open("m_depthFrame.txt");
+          outOfstream.open("m_depthFrame" + std::to_string(frame_count) + ".txt");
           assert(outOfstream.is_open());
 
           for (size_t i = 0; i < 480; i++){
@@ -339,8 +339,9 @@ public:
             outOfstream << "\n";
           }
           std::cout << "m_depthFrame.getDataSize() = " << m_depthFrame.getDataSize() << std::endl;
-          std::cout << "\nSUCCESS WRITE\n";
+          std::cout << std::to_string(frame_count) << "SUCCESS WRITE\n\n";
           outOfstream.close();
+          depth_is_wrote = true;
         }
     }
     /*
@@ -359,9 +360,11 @@ public:
         m_irStream.readFrame(&irFrame);
         openni::Grayscale16Pixel* dData = (openni::Grayscale16Pixel*)irFrame.getData();
         memcpy(frame.data, dData, irFrame.getStrideInBytes() * irFrame.getHeight());
-        if (depth_is_wrote && !ir_is_wrote){
-            ir_is_wrote    = true;
-            cv::imwrite("m_depthFrame.png", frame);
+
+        if (depth_is_wrote){
+            depth_is_wrote    = false;
+            cv::imwrite("m_depthFrame" + std::to_string(frame_count) + ".png", frame);
+            frame_count++;
         }
     }
     /*

@@ -774,11 +774,9 @@ CMakeFiles/AXonColorOpenCV.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/ob
 CMakeFiles/AXonColorOpenCV.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/aruco_board.hpp
 CMakeFiles/AXonColorOpenCV.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/aruco_detector.hpp
 CMakeFiles/AXonColorOpenCV.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/aruco_dictionary.hpp
-CMakeFiles/AXonColorOpenCV.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/barcode.hpp
 CMakeFiles/AXonColorOpenCV.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp
 CMakeFiles/AXonColorOpenCV.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp
 CMakeFiles/AXonColorOpenCV.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/face.hpp
-CMakeFiles/AXonColorOpenCV.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp
 CMakeFiles/AXonColorOpenCV.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/opencv.hpp
 CMakeFiles/AXonColorOpenCV.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/opencv_modules.hpp
 CMakeFiles/AXonColorOpenCV.dir/main.cpp.o: /usr/local/include/opencv4/opencv2/photo.hpp
